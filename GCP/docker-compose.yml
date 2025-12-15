@@ -1,0 +1,25 @@
+version: '3'
+services:
+  # Service 1: Interactive Brokers Gateway (Headless)
+  ib-gateway:
+    image: ghcr.io/gnzsnz/ib-gateway:latest
+    restart: always
+    environment:
+      - TWS_USERID=amyleung889
+      - TWS_PASSWORD=!Insaneiw0403
+      - TRADING_MODE=paper
+      - VNC_SERVER_PASSWORD=Iwtrading
+    ports:
+      - "4002:4002" # Live port
+      - "4004:4004" # Paper port
+
+  # Service 2: Your VWAP Strategy
+  vwap-strategy:
+    build: .
+    restart: always
+    environment:
+      - IB_GATEWAY_HOST=ib-gateway  # Connects to the container name above
+      - IB_GATEWAY_PORT=4004        # 4004 is default for Gateway Paper
+      - IB_CLIENT_ID=1
+    depends_on:
+      - ib-gateway
