@@ -56,10 +56,10 @@ class MultiSymbolVWAPRSIStrategy:
             logging.error(f"Connection failed: {e}")
             return
         
-        # --- FIX: Use reqAccountSummary with correct keywords ---
-        logging.info("Requesting Account Summary...")
-        # Note: The correct keyword arguments are 'groupName' and 'tags'
-        self.ib.reqAccountSummary(groupName="All", tags="NetLiquidation,TotalCashValue")
+        # --- FIX: Use reqAccountSummary defaults to avoid keyword issues ---
+        logging.info("Requesting Account Summary (Defaults)...")
+        # Calling without arguments uses defaults (group='All', tags=...) which includes NetLiquidation.
+        self.ib.reqAccountSummary()
         
         # WAIT LOOP: Ensure we actually have data before proceeding
         logging.info("Waiting for account data to populate...")
@@ -158,15 +158,20 @@ class MultiSymbolVWAPRSIStrategy:
         """
         Retrieves Equity and Cash using accountSummary().
         """
-        usd_cash = 0.0
+        equity = 0.0
+        cash = 0.0
 
         # Iterate through the accountSummary list
         for item in self.ib.accountSummary():
-            if item.tag == 'NetLiquidationByCurrency' and item.currency == 'USD':
-                    try: 
-                        usd_cash = float(item.value)
-                    except: pass    
-        return usd_cash
+            # Filter for USD if possible, or take the value if currency is None/Empty (base)
+            if item.currency == 'USD' or item.currency == '':
+                if item.tag == 'NetLiquidation':
+                    try: equity = float(item.value)
+                    except: pass
+                elif item.tag == 'TotalCashValue':
+                    try: cash = float(item.value)
+                    except: pass
+        return equity, cash
 
     def place_order(self, symbol, action, entry_price, tp_target_price):
         """
@@ -179,8 +184,8 @@ class MultiSymbolVWAPRSIStrategy:
         reverse_action = 'SELL' if action == 'BUY' else 'BUY'
         
         # --- 1. GET ACCOUNT DATA (Using accountSummary) ---
-        usd_cash = self.get_account_balances()
-        if usd_cash == 0: 
+        equity, cash = self.get_account_balances()
+        if equity == 0: 
             logging.error("Could not fetch Account Equity from accountSummary. Defaulting to safe small size.")
             equity = 50000 # Safety fallback
             cash = 50000
@@ -189,7 +194,7 @@ class MultiSymbolVWAPRSIStrategy:
         # "calculate the appropriate size by looking at the current available cash"
         # We assume we want to utilize available cash for the trade.
         # We use 98% of cash to leave room for commissions and slippage.
-        usable_cash = usd_cash * 0.98
+        usable_cash = cash * 0.98
         
         if entry_price == 0: 
             logging.error("Entry price is zero. Cannot calculate size.")
@@ -223,12 +228,14 @@ class MultiSymbolVWAPRSIStrategy:
         logging.info(f"Entry: {entry_price} | SL Price: {sl_price}")
         logging.info("---------------------------------------")
 
-        self.ib.client.reqIds(-1)
-        baseId = self.ib.client.getReqId()
+        # --- FIX: Generate Distinct IDs for Bracket Order ---
+        parentId = self.ib.client.getReqId()
+        slId = self.ib.client.getReqId()
+        tpId = self.ib.client.getReqId()
 
         # 1. Parent Market Order
         parent = MarketOrder(action, final_qty)
-        parent.orderId = baseId
+        parent.orderId = parentId
         parent.transmit = False
 
         # 2. Stop Loss Order
@@ -236,8 +243,8 @@ class MultiSymbolVWAPRSIStrategy:
             action=reverse_action,
             totalQuantity=final_qty,
             stopPrice=sl_price,
-            parentId=baseId,
-            orderId=baseId + 1,
+            parentId=parentId,
+            orderId=slId,
             tif='GTC',
             transmit=False
         )
@@ -248,8 +255,8 @@ class MultiSymbolVWAPRSIStrategy:
             action=reverse_action,
             totalQuantity=final_qty,
             lmtPrice=tp_price,
-            parentId=baseId,
-            orderId=baseId + 2,
+            parentId=parentId,
+            orderId=tpId,
             tif='GTC',
             transmit=True # Transmit the whole bracket
         )

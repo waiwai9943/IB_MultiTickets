@@ -4688,3 +4688,187 @@ ConnectionError: Not connected
 2025-12-10 13:25:53,362 - INFO - Market Closed (16:25). Waiting...
 2025-12-10 13:26:53,366 - INFO - Market Closed (16:26). Waiting...
 2025-12-10 13:27:53,381 - INFO - Market Closed (16:27). Waiting...
+2026-01-09 09:20:51,739 - INFO - Attempting to connect to IB TWS/Gateway...
+2026-01-09 09:20:51,739 - INFO - Connecting to 127.0.0.1:4002 with clientId 1...
+2026-01-09 09:20:51,741 - INFO - Connected
+2026-01-09 09:20:51,767 - INFO - Logged on to server version 176
+2026-01-09 09:20:51,773 - INFO - API connection ready
+2026-01-09 09:20:51,777 - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2026-01-09 09:20:51,777 - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2026-01-09 09:20:51,777 - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefil
+2026-01-09 09:20:52,276 - INFO - Synchronization complete
+2026-01-09 09:20:52,277 - INFO - Connected to IB TWS/Gateway.
+2026-01-09 09:20:52,277 - INFO - Requesting Account Summary...
+2026-01-09 09:20:52,299 - INFO - Disconnecting from 127.0.0.1:4002, 117 B sent in 8 messages, 16.5 kB received in 356 messages, session time 562 ms.
+2026-01-09 09:20:52,299 - INFO - Disconnecting
+2026-01-09 09:26:10,247 - INFO - Attempting to connect to IB TWS/Gateway...
+2026-01-09 09:26:10,247 - INFO - Connecting to 127.0.0.1:4002 with clientId 1...
+2026-01-09 09:26:10,250 - INFO - Connected
+2026-01-09 09:26:10,252 - INFO - Logged on to server version 176
+2026-01-09 09:26:10,253 - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2026-01-09 09:26:10,253 - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2026-01-09 09:26:10,253 - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefil
+2026-01-09 09:26:10,254 - INFO - API connection ready
+2026-01-09 09:26:10,357 - INFO - Synchronization complete
+2026-01-09 09:26:10,358 - INFO - Connected to IB TWS/Gateway.
+2026-01-09 09:26:10,358 - INFO - Requesting Account Summary...
+2026-01-09 09:26:10,381 - INFO - Disconnecting from 127.0.0.1:4002, 117 B sent in 8 messages, 16.5 kB received in 356 messages, session time 136 ms.
+2026-01-09 09:26:10,381 - INFO - Disconnecting
+2026-01-09 09:32:19,465 - INFO - Attempting to connect to IB TWS/Gateway...
+2026-01-09 09:32:19,466 - INFO - Connecting to 127.0.0.1:4002 with clientId 1...
+2026-01-09 09:32:19,468 - INFO - Connected
+2026-01-09 09:32:19,470 - INFO - Logged on to server version 176
+2026-01-09 09:32:19,471 - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2026-01-09 09:32:19,471 - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2026-01-09 09:32:19,472 - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefil
+2026-01-09 09:32:19,472 - INFO - API connection ready
+2026-01-09 09:32:19,775 - INFO - Synchronization complete
+2026-01-09 09:32:19,776 - INFO - Connected to IB TWS/Gateway.
+2026-01-09 09:32:19,776 - INFO - Requesting Account Summary...
+2026-01-09 09:32:19,794 - INFO - Disconnecting from 127.0.0.1:4002, 117 B sent in 8 messages, 16.5 kB received in 356 messages, session time 331 ms.
+2026-01-09 09:32:19,795 - INFO - Disconnecting
+2026-01-09 09:34:25,596 - INFO - Attempting to connect to IB TWS/Gateway...
+2026-01-09 09:34:25,597 - INFO - Connecting to 127.0.0.1:4002 with clientId 1...
+2026-01-09 09:34:25,599 - INFO - Connected
+2026-01-09 09:34:25,601 - INFO - Logged on to server version 176
+2026-01-09 09:34:25,601 - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2026-01-09 09:34:25,601 - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2026-01-09 09:34:25,601 - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefil
+2026-01-09 09:34:25,601 - INFO - API connection ready
+2026-01-09 09:34:25,904 - INFO - Synchronization complete
+2026-01-09 09:34:25,905 - INFO - Connected to IB TWS/Gateway.
+2026-01-09 09:34:25,905 - INFO - Requesting Account Summary...
+2026-01-09 09:34:25,925 - INFO - Disconnecting from 127.0.0.1:4002, 117 B sent in 8 messages, 16.5 kB received in 356 messages, session time 331 ms.
+2026-01-09 09:34:25,926 - INFO - Disconnecting
+2026-01-09 09:35:43,626 - INFO - Attempting to connect to IB TWS/Gateway...
+2026-01-09 09:35:43,627 - INFO - Connecting to 127.0.0.1:4002 with clientId 1...
+2026-01-09 09:35:43,629 - INFO - Connected
+2026-01-09 09:35:43,631 - INFO - Logged on to server version 176
+2026-01-09 09:35:43,632 - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2026-01-09 09:35:43,632 - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2026-01-09 09:35:43,632 - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefil
+2026-01-09 09:35:43,632 - INFO - API connection ready
+2026-01-09 09:35:43,736 - INFO - Synchronization complete
+2026-01-09 09:35:43,736 - INFO - Connected to IB TWS/Gateway.
+2026-01-09 09:35:43,737 - INFO - Requesting Account Summary...
+2026-01-09 09:35:43,754 - INFO - Disconnecting from 127.0.0.1:4002, 117 B sent in 8 messages, 16.5 kB received in 356 messages, session time 129 ms.
+2026-01-09 09:35:43,754 - INFO - Disconnecting
+2026-01-09 09:42:19,736 - INFO - Attempting to connect to IB TWS/Gateway...
+2026-01-09 09:42:19,737 - INFO - Connecting to 127.0.0.1:4002 with clientId 1...
+2026-01-09 09:42:19,739 - INFO - Connected
+2026-01-09 09:42:19,742 - INFO - Logged on to server version 176
+2026-01-09 09:42:19,743 - INFO - API connection ready
+2026-01-09 09:42:19,744 - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2026-01-09 09:42:19,744 - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2026-01-09 09:42:19,744 - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefil
+2026-01-09 09:42:20,046 - INFO - Synchronization complete
+2026-01-09 09:42:20,046 - INFO - Connected to IB TWS/Gateway.
+2026-01-09 09:42:20,047 - INFO - Requesting Account Summary...
+2026-01-09 09:42:20,065 - INFO - Disconnecting from 127.0.0.1:4002, 117 B sent in 8 messages, 16.5 kB received in 356 messages, session time 330 ms.
+2026-01-09 09:42:20,066 - INFO - Disconnecting
+2026-01-09 09:51:05,922 - INFO - Attempting to connect to IB TWS/Gateway...
+2026-01-09 09:51:05,922 - INFO - Connecting to 127.0.0.1:4002 with clientId 1...
+2026-01-09 09:51:05,924 - INFO - Connected
+2026-01-09 09:51:05,926 - INFO - Logged on to server version 176
+2026-01-09 09:51:05,927 - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2026-01-09 09:51:05,927 - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2026-01-09 09:51:05,928 - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefil
+2026-01-09 09:51:05,928 - INFO - API connection ready
+2026-01-09 09:51:06,231 - INFO - Synchronization complete
+2026-01-09 09:51:06,232 - INFO - Connected to IB TWS/Gateway.
+2026-01-09 09:51:06,232 - INFO - Requesting Account Summary...
+2026-01-09 09:51:06,254 - INFO - Disconnecting from 127.0.0.1:4002, 117 B sent in 8 messages, 16.5 kB received in 356 messages, session time 334 ms.
+2026-01-09 09:51:06,255 - INFO - Disconnecting
+2026-01-09 09:54:40,297 - INFO - Attempting to connect to IB TWS/Gateway...
+2026-01-09 09:54:40,297 - INFO - Connecting to 127.0.0.1:4002 with clientId 1...
+2026-01-09 09:54:40,299 - INFO - Connected
+2026-01-09 09:54:40,301 - INFO - Logged on to server version 176
+2026-01-09 09:54:40,302 - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2026-01-09 09:54:40,302 - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2026-01-09 09:54:40,303 - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefil
+2026-01-09 09:54:40,303 - INFO - API connection ready
+2026-01-09 09:54:40,405 - INFO - Synchronization complete
+2026-01-09 09:54:40,406 - INFO - Connected to IB TWS/Gateway.
+2026-01-09 09:54:40,406 - INFO - Requesting Account Summary (Defaults)...
+2026-01-09 09:54:40,479 - INFO - Waiting for account data to populate...
+2026-01-09 09:54:40,480 - INFO - Account data received.
+2026-01-09 09:54:40,480 - INFO - Qualifying contracts for: ['SPY', 'QQQ', 'MSFT', 'TSLA']
+2026-01-09 09:54:40,861 - INFO - Qualified: SPY
+2026-01-09 09:54:41,082 - INFO - Qualified: QQQ
+2026-01-09 09:54:41,233 - INFO - Qualified: MSFT
+2026-01-09 09:54:41,390 - INFO - Qualified: TSLA
+2026-01-09 09:54:41,391 - INFO - Strategy started. Monitoring symbols: ['SPY', 'QQQ', 'MSFT', 'TSLA']
+2026-01-09 09:54:41,426 - INFO - Current Holdings: FLAT (No positions)
+2026-01-09 09:54:41,426 - INFO - Scanning ['SPY', 'QQQ', 'MSFT', 'TSLA'] for opportunities...
+2026-01-09 09:54:42,387 - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2026-01-09 09:54:44,008 - INFO - Scan complete. Sleeping 21s until 09:55:05
+2026-01-09 09:55:05,012 - INFO - Current Holdings: FLAT (No positions)
+2026-01-09 09:55:05,012 - INFO - Scanning ['SPY', 'QQQ', 'MSFT', 'TSLA'] for opportunities...
+2026-01-09 09:55:05,914 - INFO - Scan complete. Sleeping 300s until 10:00:05
+2026-01-09 10:00:05,915 - INFO - Current Holdings: FLAT (No positions)
+2026-01-09 10:00:05,916 - INFO - Scanning ['SPY', 'QQQ', 'MSFT', 'TSLA'] for opportunities...
+2026-01-09 10:00:06,804 - INFO - Scan complete. Sleeping 299s until 10:05:05
+2026-01-09 10:05:05,815 - INFO - Current Holdings: FLAT (No positions)
+2026-01-09 10:05:05,816 - INFO - Scanning ['SPY', 'QQQ', 'MSFT', 'TSLA'] for opportunities...
+2026-01-09 10:05:06,704 - INFO - Scan complete. Sleeping 299s until 10:10:05
+2026-01-09 10:08:30,566 - INFO - Warning 2103, reqId -1: Market data farm connection is broken:usfarm
+2026-01-09 10:08:30,567 - INFO - Warning 2105, reqId -1: HMDS data farm connection is broken:ushmds
+2026-01-09 10:08:30,920 - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2026-01-09 10:08:31,301 - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2026-01-09 10:10:05,711 - INFO - Current Holdings: FLAT (No positions)
+2026-01-09 10:10:05,712 - INFO - Scanning ['SPY', 'QQQ', 'MSFT', 'TSLA'] for opportunities...
+2026-01-09 10:10:05,858 - ERROR - Error 162, reqId 24: Historical Market Data Service error message:Trading TWS session is connected from a different IP address, contract: Stock(conId=756733, symbol='SPY', exchange='SMART', primaryExchange='ARCA', currency='USD', localSymbol='SPY', tradingClass='SPY')
+2026-01-09 10:10:05,858 - WARNING - No data returned for SPY
+2026-01-09 10:10:05,995 - ERROR - Error 162, reqId 25: Historical Market Data Service error message:Trading TWS session is connected from a different IP address, contract: Stock(conId=320227571, symbol='QQQ', exchange='SMART', primaryExchange='NASDAQ', currency='USD', localSymbol='QQQ', tradingClass='NMS')
+2026-01-09 10:10:05,996 - WARNING - No data returned for QQQ
+2026-01-09 10:10:06,132 - ERROR - Error 162, reqId 26: Historical Market Data Service error message:Trading TWS session is connected from a different IP address, contract: Stock(conId=272093, symbol='MSFT', exchange='SMART', primaryExchange='NASDAQ', currency='USD', localSymbol='MSFT', tradingClass='NMS')
+2026-01-09 10:10:06,133 - WARNING - No data returned for MSFT
+2026-01-09 10:10:06,271 - ERROR - Error 162, reqId 27: Historical Market Data Service error message:Trading TWS session is connected from a different IP address, contract: Stock(conId=76792991, symbol='TSLA', exchange='SMART', primaryExchange='NASDAQ', currency='USD', localSymbol='TSLA', tradingClass='NMS')
+2026-01-09 10:10:06,272 - WARNING - No data returned for TSLA
+2026-01-09 10:10:06,272 - INFO - Scan complete. Sleeping 299s until 10:15:05
+2026-01-09 10:15:05,278 - INFO - Current Holdings: FLAT (No positions)
+2026-01-09 10:15:05,278 - INFO - Scanning ['SPY', 'QQQ', 'MSFT', 'TSLA'] for opportunities...
+2026-01-09 10:15:05,416 - ERROR - Error 162, reqId 28: Historical Market Data Service error message:Trading TWS session is connected from a different IP address, contract: Stock(conId=756733, symbol='SPY', exchange='SMART', primaryExchange='ARCA', currency='USD', localSymbol='SPY', tradingClass='SPY')
+2026-01-09 10:15:05,417 - WARNING - No data returned for SPY
+2026-01-09 10:15:05,554 - ERROR - Error 162, reqId 29: Historical Market Data Service error message:Trading TWS session is connected from a different IP address, contract: Stock(conId=320227571, symbol='QQQ', exchange='SMART', primaryExchange='NASDAQ', currency='USD', localSymbol='QQQ', tradingClass='NMS')
+2026-01-09 10:15:05,555 - WARNING - No data returned for QQQ
+2026-01-09 10:15:05,692 - ERROR - Error 162, reqId 30: Historical Market Data Service error message:Trading TWS session is connected from a different IP address, contract: Stock(conId=272093, symbol='MSFT', exchange='SMART', primaryExchange='NASDAQ', currency='USD', localSymbol='MSFT', tradingClass='NMS')
+2026-01-09 10:15:05,693 - WARNING - No data returned for MSFT
+2026-01-09 10:15:05,830 - ERROR - Error 162, reqId 31: Historical Market Data Service error message:Trading TWS session is connected from a different IP address, contract: Stock(conId=76792991, symbol='TSLA', exchange='SMART', primaryExchange='NASDAQ', currency='USD', localSymbol='TSLA', tradingClass='NMS')
+2026-01-09 10:15:05,831 - WARNING - No data returned for TSLA
+2026-01-09 10:15:05,831 - INFO - Scan complete. Sleeping 300s until 10:20:05
+2026-01-09 10:20:05,852 - INFO - Current Holdings: FLAT (No positions)
+2026-01-09 10:20:05,853 - INFO - Scanning ['SPY', 'QQQ', 'MSFT', 'TSLA'] for opportunities...
+2026-01-09 10:20:05,990 - ERROR - Error 162, reqId 32: Historical Market Data Service error message:Trading TWS session is connected from a different IP address, contract: Stock(conId=756733, symbol='SPY', exchange='SMART', primaryExchange='ARCA', currency='USD', localSymbol='SPY', tradingClass='SPY')
+2026-01-09 10:20:05,990 - WARNING - No data returned for SPY
+2026-01-09 10:20:06,128 - ERROR - Error 162, reqId 33: Historical Market Data Service error message:Trading TWS session is connected from a different IP address, contract: Stock(conId=320227571, symbol='QQQ', exchange='SMART', primaryExchange='NASDAQ', currency='USD', localSymbol='QQQ', tradingClass='NMS')
+2026-01-09 10:20:06,129 - WARNING - No data returned for QQQ
+2026-01-09 10:20:06,266 - ERROR - Error 162, reqId 34: Historical Market Data Service error message:Trading TWS session is connected from a different IP address, contract: Stock(conId=272093, symbol='MSFT', exchange='SMART', primaryExchange='NASDAQ', currency='USD', localSymbol='MSFT', tradingClass='NMS')
+2026-01-09 10:20:06,267 - WARNING - No data returned for MSFT
+2026-01-09 10:20:06,402 - ERROR - Error 162, reqId 35: Historical Market Data Service error message:Trading TWS session is connected from a different IP address, contract: Stock(conId=76792991, symbol='TSLA', exchange='SMART', primaryExchange='NASDAQ', currency='USD', localSymbol='TSLA', tradingClass='NMS')
+2026-01-09 10:20:06,403 - WARNING - No data returned for TSLA
+2026-01-09 10:20:06,403 - INFO - Scan complete. Sleeping 299s until 10:25:05
+2026-01-09 10:23:43,327 - ERROR - Peer closed connection.
+2026-01-09 10:23:43,328 - ERROR - Error in main loop
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\envs\algo\Lib\site-packages\ib_insync\util.py", line 341, in run
+    result = loop.run_until_complete(task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\envs\algo\Lib\asyncio\base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\envs\algo\Lib\asyncio\tasks.py", line 649, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\Isaac\Proj\algo\IB_MultiTickets\GCP\VWAP_RSI_multiple.py", line 340, in run
+    self.ib.sleep(wait_seconds)
+  File "C:\ProgramData\anaconda3\envs\algo\Lib\site-packages\ib_insync\util.py", line 386, in sleep
+    run(asyncio.sleep(secs))
+  File "C:\ProgramData\anaconda3\envs\algo\Lib\site-packages\ib_insync\util.py", line 343, in run
+    raise globalErrorEvent.value() or e
+ConnectionError: Socket disconnect
